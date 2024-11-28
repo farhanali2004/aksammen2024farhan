@@ -1,0 +1,354 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Logo Section */
+header .logo {
+  flex: 1; /* Pushes the logo to the left */
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Navigation Links */
+header nav {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Search Bar Section */
+header .search-bar {
+  flex: 2; /* Makes the search bar centered */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+header .search-bar input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+header .search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header .search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Shopping Cart Section */
+header a[href$="checkout.html"] {
+  flex: 1; /* Pushes the cart icon to the right */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+header a[href$="checkout.html"]:hover {
+  color: #007bff;
+}
+
+/* Main Section */
+main {
+  padding: 1rem 2rem;
+}
+
+/* Banner */
+#banner {
+  background: linear-gradient(to right, #6a6a6a, #8a8a8a);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#banner h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#banner a.button {
+  background-color: white;
+  color: #007bff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#banner a.button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Populære produkter */
+#produkter {
+  margin-top: 2rem;
+}
+
+#produkter h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#produkter p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#produkter .product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#produkter .product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+#produkter .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flexbox Layout for Products */
+#produkter article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Populære kategorier */
+#kategorier {
+  margin-top: 2rem;
+}
+
+#kategorier .category-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#kategorier .category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flexbox Layout for Categories */
+#kategorier article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Anmeldelser */
+#anmeldelser {
+  margin-top: 2rem;
+}
+
+#anmeldelser h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#anmeldelser .review {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#anmeldelser .review img {
+  border-radius: 50%;
+  max-width: 80px;
+  margin-bottom: 1rem;
+}
+
+#anmeldelser .review:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+footer section {
+  flex: 1;
+  min-width: 200px;
+}
+
+footer a {
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav {
+    order: 1;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .search-bar {
+    order: 2;
+    margin: 1rem 0;
+  }
+
+  a[href$="checkout.html"] {
+    order: 3;
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Social Media Section */
+section[role="contentinfo"] {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+section[role="contentinfo"] h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+section[role="contentinfo"] ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+section[role="contentinfo"] ul li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+section[role="contentinfo"] ul li a:hover {
+  color: #0056b3;
+}
+
+section[role="contentinfo"] ul li a i {
+  font-size: 0.8rem;
+}

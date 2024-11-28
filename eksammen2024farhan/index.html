@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="np">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forside - Nettbutikk</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+  <!-- Header -->
+  <header itemscope itemtype="https://schema.org/WPHeader">
+    <nav>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#produkter">Produkter</a></li>
+        <li><a href="#kategorier">Kategorier</a></li>
+        <li><a href="#kontakt">Kontakt oss</a></li>
+      </ul>
+      <a href="index.html" class="logo">
+        <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/skopro-logo.png" alt="Logo" itemprop="logo">
+        <a href="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/eksammen2024farhan/checkout.html">🛒</a>
+      </a>
+      <a href="checkout.html">
+      </a>
+    </nav>
+    <form class="search-bar" role="search" aria-label="Søkefelt">
+      <input type="search" placeholder="Søk produkter..." aria-label="Søk produkter">
+      <button>Søk</button>
+    </form>
+  </header>
+
+  <!-- Main -->
+  <main itemscope itemtype="https://schema.org/CreativeWork">
+    <!-- Banner -->
+    <section id="banner" aria-labelledby="banner-title">
+      <h1 id="banner-title" itemprop="headline">Velkommen til vår nettbutikk</h1>
+      <p itemprop="description">Oppdag våre nyeste produkter og tilbud!</p>
+      <a href="#produkter" class="button" role="button" aria-label="Utforsk produkter">Utforsk nå</a>
+    </section>
+
+    <!-- Populære produkter -->
+    <section id="produkter" aria-labelledby="produkter-title" itemscope itemtype="https://schema.org/ItemList">
+        <h2 id="produkter-title">Våre mest populære produkter</h2>
+        <p itemprop="description">Velg blant våre bestselgere.</p>
+      
+        <!-- Product 1 -->
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <figure>
+            <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/airforce black.jpeg" alt="Air Force Black sneakers" itemprop="image">
+            <figcaption>
+              <h3 id="product1-title" itemprop="name">Air Force Black</h3>
+              <p>Pris: <span itemprop="priceCurrency" content="NOK">NOK</span> <span itemprop="price">1299</span>,-</p>
+              <meta itemprop="availability" content="https://schema.org/InStock">
+            </figcaption>
+          </figure>
+        </article>
+      
+        <!-- Product 2 -->
+        <article class="product-card" itemscope itemtype="https://schema.org/Product">
+          <figure>
+            <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/airforce hvite.jpeg" alt="Air Force White sneakers" itemprop="image">
+            <figcaption>
+              <h3 id="product2-title" itemprop="name">Air Force White</h3>
+              <p>Pris: <span itemprop="priceCurrency" content="NOK">NOK</span> <span itemprop="price">1399</span>,-</p>
+              <meta itemprop="availability" content="https://schema.org/InStock">
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+      
+
+    <!-- Populære kategorier -->
+    <section id="kategorier" aria-labelledby="kategorier-title">
+      <h2 id="kategorier-title">Våre mest populære kategorier</h2>
+      <p>Utforsk våre forskjellige kategorier.</p>
+      <article class="category-card">
+        <h3>Kategori 1</h3>
+      </article>
+      <article class="category-card">
+        <h3>Kategori 2</h3>
+      </article>
+    </section>
+
+    <!-- Anmeldelser -->
+    <section id="anmeldelser" aria-labelledby="anmeldelser-title">
+      <h2 id="anmeldelser-title">Kundeanmeldelser</h2>
+      <article class="review" itemscope itemtype="https://schema.org/Review">
+        <figure>
+          <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/airforce black.jpeg" alt="Kunde" itemprop="image">
+          <figcaption>
+            <h3 itemprop="headline">Fantastisk!</h3>
+            <p itemprop="reviewBody">Jeg elsker dette produktet!</p>
+            <meta itemprop="reviewRating" content="5">
+          </figcaption>
+        </figure>
+      </article>
+      <article class="review" itemscope itemtype="https://schema.org/Review">
+        <figure>
+          <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/airforce hvite.jpeg" alt="Kunde" itemprop="image">
+          <figcaption>
+            <h3 itemprop="headline">God kvalitet</h3>
+            <p itemprop="reviewBody">Produktet var akkurat som forventet.</p>
+            <meta itemprop="reviewRating" content="4">
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer itemscope itemtype="https://schema.org/WPFooter">
+    <section>
+      <h3>skopro</h3>
+      <p>Din favoritt nettbutikk.</p>
+    </section>
+    <section id="kontakt">
+      <h3>Kontakt oss</h3>
+      <p>E-post: <a href="mailto:post@skopro.no" itemprop="email">post@skopro.no</a></p>
+      <p>Tlf: <span itemprop="telephone">40988373</span></p>
+    </section>
+    <section>
+      <h3>Snarveier</h3>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="#produkter">Produkter</a></li>
+        <li><a href="#kategorier">Kategorier</a></li>
+      </ul>
+    </section>
+    <section role="contentinfo" aria-labelledby="social-media-title">
+        <h3 id="social-media-title">Følg oss</h3>
+        <ul>
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Følg oss på Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Følg oss på Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Følg oss på LinkedIn">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+                </a>
+            </li>
+            <li>
+                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" aria-label="Følg oss på Pinterest">
+                    <i class="fab fa-pinterest" aria-hidden="true"></i> Pinterest
+                </a>
+            </li>
+        </ul>
+    </section>    
+  </footer>
+</body>
+</html>
+
