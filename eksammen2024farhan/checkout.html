@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="np">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,9 +29,9 @@
                 <!-- Product 1 -->
                 <li>
                     <article itemscope itemtype="https://schema.org/Product">
-                        <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/airforce black.jpeg" alt="Air Force Black" itemprop="image">
+                        <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/AirForce_black.JPEG" alt="Air Force Black" itemprop="image">
                         <p itemprop="name">Air Force Black</p>
-                        <p>Stø<rrelse:><span itemprop="size">40</span></p>
+                        <p>Størrelse: <span itemprop="size">40</span></p>
                         <p>Antall: 1</p>
                         <p>Pris: <span itemprop="price">1299</span>,-</p>
                         <button type="button" onclick="fjernProdukt('Air Force Black')">Fjern</button>
@@ -40,7 +40,7 @@
                 <!-- Product 2 -->
                 <li>
                     <article itemscope itemtype="https://schema.org/Product">
-                        <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/airforce hvite.jpeg" alt="Air Force White" itemprop="image">
+                        <img src="/Users/farxaanlaale/Documents/GitHub/aksammen2024farhan/images/AirForce_HVITE.JPEG" alt="Air Force White" itemprop="image">
                         <p itemprop="name">Air Force White</p>
                         <p>Størrelse: <span itemprop="size">42</span></p>
                         <p>Antall: 2</p>
@@ -52,7 +52,7 @@
             <p><strong>Totalpris: 4097,-</strong></p>
         </section>
 
-        
+        <!-- Personal Info -->
         <section id="personal-info" aria-labelledby="personal-info-title">
             <h2 id="personal-info-title">Dine opplysninger</h2>
             <form>
@@ -82,7 +82,7 @@
             </form>
         </section>
 
-       
+        <!-- Delivery -->
         <section id="delivery" aria-labelledby="delivery-title">
             <h2 id="delivery-title">Levering</h2>
             <form>
@@ -101,7 +101,7 @@
             </form>
         </section>
 
-        
+        <!-- Payment -->
         <section id="payment" aria-labelledby="payment-title">
             <h2 id="payment-title">Betaling</h2>
             <form>
@@ -128,46 +128,20 @@
         </section>
     </main>
 
-  
+    <!-- Footer -->
     <footer id="footer">
         <section>
-            <p>Kontakt oss: kontakt@nskopro.no</p>
+            <h3>Kontakt oss</h3>
+            <p>E-post: kontakt@nskopro.no</p>
             <p>Telefon: 40988373</p>
             <p>Adresse: Ile alle 84</p>
         </section>
     </footer>
-<!-- jeg har brukte  -->
+
     <script>
         function fjernProdukt(produktNavn) {
             alert(produktNavn + " fjernet fra handlekurven.");
         }
     </script>
-<!--  -->
-    <footer itemscope itemtype="https://schema.org/WPFooter">
-        <section>
-          <h3>skopro</h3>
-          <p>Din favoritt nettbutikk.</p>
-        </section>
-        <section id="kontakt">
-          <h3>Kontakt oss</h3>
-          <p>E-post: <a href="mailto:post@skopro.no" itemprop="email">post@skopro.no</a></p>
-          <p>Tlf: <span itemprop="telephone">40988373</span></p>
-        </section>
-        <section>
-          <h3>Snarveier</h3>
-          <ul>
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="#produkter">Produkter</a></li>
-            <li><a href="#kategorier">Kategorier</a></li>
-          </ul>
-        </section>
-        <section>
-          <h3>Følg oss</h3>
-          <ul>
-            <li><a href="https://facebook.com">Facebook</a></li>
-            <li><a href="https://instagram.com">Instagram</a></li>
-          </ul>
-        </section>
-      </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="np">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -18,6 +19,8 @@
             </ul>
         </nav>
     </header>
+
+    
     <main>
         <section>
             <nav>
@@ -25,36 +28,66 @@
                 <a href="#">Kategori</a> > 
                 Produktnavn
             </nav>
+
             <div id="product-details">
                 <div class="product-images">
-                    <img src="img/large-product.jpg" alt="Hovedbilde">
+                    
+                    <img src="https://picsum.photos/600/400" alt="Hovedbilde av produktet">
+                    
                     <div>
-                        <img src="img/thumb1.jpg" alt="Bilde 1">
-                        <img src="img/thumb2.jpg" alt="Bilde 2">
-                        <img src="img/thumb3.jpg" alt="Bilde 3">
+                        <img src="https://picsum.photos/100/100?random=1" alt="Bilde 1">
+                        <img src="https://picsum.photos/100/100?random=2" alt="Bilde 2">
+                        <img src="https://picsum.photos/100/100?random=3" alt="Bilde 3">
                     </div>
                 </div>
+
                 <div class="product-info">
-                    <h1>air force </h1>
+                    <h1>Air Force</h1>
                     <a href="#">Merke</a>
                     <p>Pris: 1199,-</p>
                     <p>Farge: Rød</p>
+
+                    
                     <label for="size">Velg størrelse:</label>
-                    <select id="size">
-                        <option>S</option>
-                        <option>M</option>
-                        <option>L</option>
+                    <select id="size" name="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
                     </select>
+
+                 
                     <button>Favoritt</button>
                     <button>Legg i handlekurv</button>
                 </div>
             </div>
+
+            
             <section id="related-products">
                 <h2>Lignende produkter</h2>
                 <div class="product-card">
-                    <img src="/aksammen2024farhan/images/airforce black.jpeg" alt="Produkt">
-                    <h3>air force </h3>
+                    <img src="https://picsum.photos/200?random=4" alt="Air Force Black">
+                    <h3>Air Force Black</h3>
                     <p>Pris: 1399,-</p>
                 </div>
-            
+                <div class="product-card">
+                    <img src="https://picsum.photos/200?random=5" alt="Air Force White">
+                    <h3>Air Force White</h3>
+                    <p>Pris: 1499,-</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    
+    <footer id="footer">
+        <section>
+            <h3>Kontakt oss</h3>
+            <p>E-post: <a href="mailto:kontakt@skopro.no">kontakt@skopro.no</a></p>
+            <p>Telefon: 40988373</p>
+            <p>Adresse: Ile alle 84</p>
+        </section>
+    </footer>
+</body>
+</html>
+
 
